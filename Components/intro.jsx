@@ -1,28 +1,28 @@
+import FlourishEmbed from "./FlourishEmbed";
 
 export default function Intro() {
-
     return (
-        <div id="body--container" className="flex items-center flex-col mr-1">
-            <h1>
-                <u>
-                    Bienestar de los animales
-                </u>
+        <div id="body--container" className="flex items-center flex-col mr-1 mt-10">
+            <h1 style={{ marginLeft: "370px", alignSelf: "flex-start" }}> {/* Margen grande a la izquierda */}
+                Entre crisis y soluciones
             </h1>
             <p>
-                El bienestar de los animales es el estado en que se encuentran los animales que disfrutan de unas condiciones de vida adecuadas a sus necesidades y gozan de buena salud. Es objeto de atención y de estudio especialmente en el ámbito pecuario y en general de todos los animales que están al cuidado del hombre.
+                Millones de toneladas de plástico llegan cada año al océano, y <span className="text-orange-500 font-bold">Asia</span>, con su rápido crecimiento y actividad industrial, se ha convertido en una de las mayores fuentes de esta <span className="text-orange-500 font-bold">crisis ambiental</span>. Desde bolsas y botellas hasta redes de pesca y desechos de un solo uso, estos materiales no solo contaminan las aguas, sino que afectan la vida marina y la salud humana, creando una amenaza duradera para el ecosistema y el bienestar global.
             </p>
             <p>
-                El respeto al bienestar animal se fundamenta en el hecho de que todos los animales son sensibles, y por tanto se debe tener en cuenta especialmente cuando están bajo el cuidado de los humanos; desde una simple caricia hasta brindarle las comodidades en su descanso. Estas preocupaciones incluyen cómo se sacrifica a los animales como alimento, cómo se usan en la investigación científica, cómo se mantienen (como mascotas, en zoológicos, granjas, circos, etc.) y cómo las actividades humanas afectan el bienestar y la supervivencia de especies silvestres.
+                Sin embargo, la misma región que enfrenta esta crisis también lidera iniciativas para cambiar el rumbo. Diversos países han comenzado a implementar prohibiciones y regulaciones sobre el uso de plásticos, avanzando hacia un modelo de <span className="text-orange-500 font-bold">consumo más sostenible</span>. Restaurar la salud de los océanos es una tarea urgente y colectiva, y con cada esfuerzo, damos un paso hacia un planeta más limpio y saludable para todos.
             </p>
+
+            <h1 style={{ marginLeft: "370px", alignSelf: "flex-start", marginTop: "50px" }}>
+                <span>Filipinas, India, Malasia y China</span>
+            </h1>
+
             <p>
-                Como postura moral, el bienestarismo animal defiende que, si bien es lícito que los humanos posean y utilicen animales para alimento, experimentación científica, vestimenta o entretenimiento, se les debe evitar, como seres sintientes que son, cualquier sufrimiento innecesario.
+                Asia, con sus vastos territorios y población, es una de las regiones con <span className="text-orange-500 font-bold">mayor contribución a esta crisis ambiental</span>. Este impacto ambiental es liderado por países como <span className="text-orange-500 font-bold">Filipinas, India, Malasia y China</span>, que producen grandes cantidades de desechos plásticos debido a factores como el crecimiento poblacional y la falta de infraestructuras adecuadas para la gestión de residuos. A continuación, se muestra un desglose de los países asiáticos con mayor contribución a esta crisis ambiental, destacando el papel de cada uno en la generación de desechos plásticos en los océanos.
             </p>
-            <p>
-                Dentro del ámbito industrial, se considera el bienestar animal como un valor que se obtiene a través de unos estándares de manejo de la ganadería que pueden mejorar tanto la eficiencia y calidad de la producción como la valoración de esta por los consumidores.
-            </p>
-            <p>
-                La conservación de la naturaleza y las especies también puede entenderse como activismo del bienestar animal. El objetivo es preservar los hábitats de la fauna y preservar las especies para la protección de los sistemas ecológicos y la biodiversidad, lo cual beneficia al bienestar de los animales salvajes.
-            </p>
+
+
+            <FlourishEmbed />
         </div>
-    )
+    );
 }
