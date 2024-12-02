@@ -22,6 +22,19 @@ const FlourishEmbed = () => {
     setIs3D((prev) => !prev);
   };
 
+  //cambia el url cuando cambia el flag de is3D
+  useEffect(() => {
+    if(document.querySelector(".flourish-embed iframe") != null){
+
+      let flag3D = "2741288";
+
+      if(!is3D){
+        flag3D = "2740958";
+      }
+      document.querySelector(".flourish-embed iframe").src = `https://flo.uri.sh/story/${flag3D}/embed?auto=1`;
+    }
+  }, [is3D])
+
   return (
     <div
       id="flourish-container"
